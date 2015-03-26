@@ -1,0 +1,22 @@
+<h3> Add New Gym</h3>
+
+<%= form_for @gyms do |f| %>
+
+<%= f.label :name, "Gym Name" %><br />
+<%= f.text_field :name %><br />
+
+<%= f.label :street, "Street Address" %><br />
+<%= f.text_field :street %><br />
+
+<%= f.label :state, "State" %><br />
+<%= f.text_field :state %><br />
+
+<%= f.label :zipcode, "Zipcode" %><br />
+<%= f.text_field :zipcode %><br />
+
+<%= f.label :phone_number, "Phone Number" %><br />
+<%= f.text_field :phone_number %><br />
+
+<%= f.submit "Submit" %><br>
+
+<% end %>

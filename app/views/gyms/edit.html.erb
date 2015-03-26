@@ -1,0 +1,13 @@
+
+<%= @gym.name %>
+<%= @gym.street %>
+<%= @gym.state %>
+<%= @gym.zipcode %>
+<%= @gym.phone_number %>
+
+<%= form_for @gym do |f| %>
+<%= f.label :phone_number, 'Phone Number' %>
+<%= f.text_field :phone_number %>
+<%= f.submit "Update" %>
+
+<% end %>
